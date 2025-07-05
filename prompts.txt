@@ -1,0 +1,22 @@
+Markdown to CSV:
+I want to create an interactive quiz for AWS Developer Associate (DVA-C02) using the questions from the README.md. But first, I want to create a CSV for the questions:
+
+The CSV will have 3 columns: QUESTION, ANSWER_CHOICES, ANSWERS.
+
+QUESTION will be a String
+ANSWER_CHOICES will be a list of strings
+ANSWERS will be a list of strings
+
+Let us take an example, which is in lines 569 through 575 of the readme.
+
+QUESTION:
+A Developer wants to upload data to Amazon S3 and must encrypt the data in transit. Which of the following solutions will accomplish this task? (Choose TWO)
+
+ANSWER_CHOICES:
+['Set up hardware VPN tunnels to a VPC and access S3 through a VPC endpoint.', 'Set up Client-Side Encryption with an AWS KMS-Managed Customer Master Key.', 'Set up Server-Side Encryption with AWS KMS-Managed Keys.', 'Transfer the data over an SSL connection.', 'Set up Server-Side Encryption with S3-Managed Keys.']
+
+ANSWERS:
+['Set up Client-Side Encryption with an AWS KMS-Managed Customer Master Key.', 'Transfer the data over an SSL connection.']
+
+
+Create a python file that can perform this action and output a csv in the same directory.
